@@ -1,7 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.plugin = void 0;
-exports.plugin = {
+var plugin = {
     rules: {
         "no-json-parse": {
             meta: {
@@ -36,3 +34,4 @@ exports.plugin = {
         },
     },
 };
+module.exports = plugin;

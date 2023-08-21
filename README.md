@@ -1,6 +1,6 @@
-# ESLint Plug-in for Custom Rules
+# ESLint Plug-in for Safe Web Applications
 
-- This is a plug-in for ESLint that provides custom rules used by me to safeguard against JSON attacks.
+- This is a plug-in for ESLint that provides custom rules used by me to safeguard against basic web application vulnerabilities.
 
 ## Setup
 
@@ -10,13 +10,11 @@
    yarn setup;
    ```
 
-2. Add the following to your `.eslintrc.json` file.
+2. Update the following in your `.eslintrc.json` file.
 
    ```json
-   ...
-   "plugins": [..., "custom-rules"],
+   "plugins": ["safe-webapp"],
    "rules": {
-    "custom-rules/no-json-parse": 1,
+    "safe-webapp/no-json-parse": 1,
    },
-   ...
    ```

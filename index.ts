@@ -1,6 +1,6 @@
 import { Rule } from "eslint";
 
-export const plugin = {
+const plugin = {
   rules: {
     "no-json-parse": {
       meta: {
@@ -36,3 +36,5 @@ export const plugin = {
     } as Rule.RuleModule,
   },
 };
+
+export = plugin;
