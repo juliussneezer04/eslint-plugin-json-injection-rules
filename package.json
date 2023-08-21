@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-json-injection-rules",
-  "version": "1.0.1",
+  "name": "eslint-plugin-warn-json-parse",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
