@@ -1,0 +1,13 @@
+{
+  "name": "eslint-plugin-json-injection-rules",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "setup": "yarn install && yarn tsc index.ts --skipLibCheck"
+  },
+  "dependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.1.6"
+  }
+}
