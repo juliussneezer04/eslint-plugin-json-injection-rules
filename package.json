@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "setup": "yarn install && yarn tsc index.ts --skipLibCheck"
+    "setup": "yarn install && yarn tsc index.ts --skipLibCheck",
+    "publish": "yarn setup && yarn publish"
   },
   "repository": {
     "type": "git",
