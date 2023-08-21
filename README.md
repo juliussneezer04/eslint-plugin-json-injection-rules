@@ -1,5 +1,7 @@
 # ESLint Plug-in for Secure Web Applications
 
+[![npm version](https://badge.fury.io/js/eslint-plugin-secure-webapp.svg)](https://badge.fury.io/js/eslint-plugin-secure-webapp)
+
 - This is a plug-in for ESLint that provides custom rules used by me to safeguard against basic web application vulnerabilities.
 
 ## Setup
