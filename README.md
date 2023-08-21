@@ -1,4 +1,4 @@
-# ESLint Plug-in for Safe Web Applications
+# ESLint Plug-in for Secure Web Applications
 
 - This is a plug-in for ESLint that provides custom rules used by me to safeguard against basic web application vulnerabilities.
 
@@ -13,8 +13,8 @@
 2. Update the following in your `.eslintrc.json` file.
 
    ```json
-   "plugins": ["safe-webapp"],
+   "plugins": ["secure-webapp"],
    "rules": {
-    "safe-webapp/no-json-parse": 1,
+    "secure-webapp/no-json-parse": 1,
    },
    ```
