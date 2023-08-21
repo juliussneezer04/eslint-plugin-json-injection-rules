@@ -1,11 +1,11 @@
 {
   "name": "eslint-plugin-warn-json-parse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "setup": "yarn install && yarn tsc index.ts --skipLibCheck",
-    "publish": "yarn setup && yarn publish"
+    "deploy": "yarn setup && yarn publish"
   },
   "repository": {
     "type": "git",
