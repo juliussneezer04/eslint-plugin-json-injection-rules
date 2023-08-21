@@ -1,10 +1,14 @@
 {
   "name": "eslint-plugin-warn-json-parse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "setup": "yarn install && yarn tsc index.ts --skipLibCheck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliussneezer04/eslint-plugin-json-injection-rules"
   },
   "dependencies": {
     "tsc": "^2.0.4",
