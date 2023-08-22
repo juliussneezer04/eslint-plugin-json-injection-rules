@@ -2,6 +2,32 @@ import { Rule } from "eslint";
 
 const plugin = {
   rules: {
+    "no-anchor-tag": {
+      meta: {
+        type: "problem",
+        docs: {
+          description: "Disallow the use of anchor tags",
+          category: "Best Practices",
+          recommended: true,
+        },
+        fixable: "code",
+        schema: [], // No options for this rule
+      },
+      create: function (context) {
+        return {
+          JSXOpeningElement(_codePath: any, node: any) {
+            if (node.name.type === "JSXIdentifier" && node.name === "a") {
+              context.report({
+                node,
+                message: "Avoid using anchor tags",
+                fix: (fixer: { remove: (arg0: any) => any }) =>
+                  fixer.remove(node),
+              });
+            }
+          },
+        };
+      },
+    } as Rule.RuleModule,
     "no-json-parse": {
       meta: {
         type: "suggestion",
