@@ -1,6 +1,33 @@
 "use strict";
 var plugin = {
     rules: {
+        "no-anchor-tag": {
+            meta: {
+                type: "problem",
+                docs: {
+                    description: "Disallow the use of anchor tags",
+                    category: "Best Practices",
+                    recommended: true,
+                },
+                fixable: "code",
+                schema: [], // No options for this rule
+            },
+            create: function (context) {
+                return {
+                    JSXOpeningElement: function (_codePath, node) {
+                        if (node.name.type === "JSXIdentifier" && node.name === "a") {
+                            context.report({
+                                node: node,
+                                message: "Avoid using anchor tags",
+                                fix: function (fixer) {
+                                    return fixer.remove(node);
+                                },
+                            });
+                        }
+                    },
+                };
+            },
+        },
         "no-json-parse": {
             meta: {
                 type: "suggestion",
