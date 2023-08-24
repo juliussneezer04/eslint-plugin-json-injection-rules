@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-secure-webapp",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@types/eslint": "^8.44.2",
+    "@typescript-eslint/experimental-utils": "^5.62.0",
     "eslint": "^8.47.0",
     "tsc": "^2.0.4",
     "typescript": "^5.1.6"
